@@ -1,0 +1,11 @@
+--- 
+permalink: /hidden-elegance-of-the-jvm/index.html
+layout: post
+title: "Hidden Elegance of the JVM  "
+published: true
+categories: []
+
+---
+<p class="p1">Last week, I wrote a (botched) attempt to run supervised user-generated code on the JVM. (It's a cardinal sin, I know, I know). In the process, I wrote several hooks into the JVM runtime to make sure the insecure code was not attempting to use unsafe features. (If you're curious, it involved custom class loaders and security managers).</p>
+<p class="p1">It dawned on me that I was writing a Java program that was modifying the runtime that was executing it. It was reminiscent of Lisp macros and the metacircular evaluator in SICP. It's not quite on the same level as Lisp's homoiconicity but more elegance that I would expect from kludgy Java.</p>
+<p class="p1">Programs that are able to reason about their own execution fascinate me.</p>
