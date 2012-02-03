@@ -31,6 +31,6 @@ To anyone who have programmed in Rails or iOS, the concept of separating a view 
 ##I like freedom. I like convenience better.
 I'm turning the tables on Ben Franklin this time. We've demanded social Web standards for over half a decade. What did we get? An incomprehensible alphabet soup like RDF, OWL and SPARQL.
 
-The HTML standards committee missed the boat on provided an easy and standardized way to relate the shareable snippets that our modern Web is composed of. Instead of being encoded in Hypertext, the underlying relational graph of the web is contained within the databases of private Internet giants.
+More than video element and the death of Flash, a better social experience is what HTML5 should have offered us. The HTML standards committee missed the boat on provided an easy and standardized way to relate the shareable snippets that our modern Web is composed of. Instead of being encoded in Hypertext, the underlying relational graph of the web is contained within the databases of private Internet giants.
 
 I'm not going to stop using the Web because of this. Life is far too short to be an ideologue. But I can't help but lament what could have been.
