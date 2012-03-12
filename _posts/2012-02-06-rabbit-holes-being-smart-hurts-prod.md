@@ -35,7 +35,7 @@ If one brilliant researcher wasn't enough, Richard Hamming puts it yet another w
 
 What both of them are saying is that producing brilliant work is heavily reliant on serendipity. Putting your nose to the grindstone will certainly get things done, but when you are working on cutting-edge problems with no predetermined path to success you derive inspiration through chance discoveries.
 
-Both these men were probably relied on conversations with their brilliant colleagues to deliver them random insights. But they also had the advantage of working at the top of their games at MIT and Bell Labs, respectively. The common geek today relies on the Internet, especially community watering holes like HackerNews and Reddit, to keep abreast of "what the world is and what might be important".
+Both these men were probably relied on conversations with their brilliant colleagues to deliver them random insights. But they also had the advantage of working at the top of their games at Caltech [1] and Bell Labs, respectively. The common geek today relies on the Internet, especially community watering holes like HackerNews and Reddit, to keep abreast of "what the world is and what might be important".
 
 ##The solution
 We have concluded that random walks of knowledge-gathering keep us from getting things done day-to-day but can also be catalysts for amazing work. Falling down the rabbit hole seems to be an activity best done in moderation. How can you use it to your advantage without letting it damage you?
@@ -55,3 +55,7 @@ For long form text, I am a fan on [Instapaper](http://www.instapaper.com/) and I
 Make some time to revisit these repositories of information. It is easy to just hoard web snippets and never use them to your advantage. So set aside some time everyday to update yourself on your findings. It does not have to be much; just 15 minutes will suffice.
 
 With enough discipline and practice, you may find that you are more productive than ever and maybe people will even say “How did he do it? He must be a genius!”.
+
+Errata:
+Feynman had a career at Caltech, not MIT. Thanks to [mturmon](http://news.ycombinator.com/user?id=mturmon) for the
+correction.
