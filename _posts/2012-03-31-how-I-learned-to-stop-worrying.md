@@ -8,7 +8,7 @@ categories: []
 
 I discovered this [open letter to developers](http://thingist.com/t/item/4372/) in an HN comment thread the other day. The author points out an concerning trait of many software developers to be overly critical and hateful towards beginners.
 
-Almost every accomplished designer I know has disparaged [Twitter Bootstrap](http://twitter.github.com/bootstrap/) and (implicitly) the people who use it. I admit I have the same tendencies. As a backend Web developer, I wince just a tad when someone mentions they've abstracted their entire application using something like [Parse](https://parse.com/?IStillLoveYouParse)
+Almost every accomplished designer I know has disparaged [Twitter Bootstrap](http://twitter.github.com/bootstrap/) and (implicitly) the people who use it. I admit I have the same tendencies. As a backend Web developer, I wince just a tad when someone mentions they've abstracted their entire application using something like [Parse](https://parse.com/?IStillLoveYouParse).
 
 ##The Tables Turn
 It is easy to ascribe this defensiveness to snobbery or "get off my lawn" attitude. But in reality, it is easy to see why the old guard sees newcomers as an affront to their skills. Making a concept accessible necessarily requires replacing nuance and individualism with sweeping generalizations. It hurts when the precepts of your craft are reduced to sound bites, code snippets, and [cargo cult practices](http://en.wikipedia.org/wiki/Cargo_cult). Vitriolic essays comparing the [software to terminal illnesses](http://teddziuba.com/2011/10/node-js-is-cancer.html) result.
