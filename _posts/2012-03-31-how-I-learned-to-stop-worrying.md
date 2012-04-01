@@ -21,6 +21,6 @@ It was then I realized that these easy-to-use tools are not just a convenience b
 There will always be people in the world who have no appreciation for your craft. Such people have always existed, even before starter kits and frameworks "dumbed things down." There is nothing you can do except accept that fact. But for everyone else, the availability of tools provides an entry point for learning more advanced theory. 
 
 ##Standing Up For Your Principles
-Any developer will agree that abstraction is one of the defining tenets of development. A designer should be expected to know about databases and concurrency, nor a programmer about proper line heights. To disrespect tools like Bootstrap or Parse is to disrespect that principle.
+Any developer will agree that abstraction is one of the defining tenets of development. A designer should not be expected to know about databases and concurrency, nor a programmer about proper line heights. To disrespect tools like Bootstrap or Parse is to disrespect that principle.
 
 Now, before I denounce anything aimed at beginners, I remind myself that before learning things "The Right Way," it is necessary to learn it in the first place.
