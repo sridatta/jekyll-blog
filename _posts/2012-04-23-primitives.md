@@ -35,16 +35,6 @@ It is of course possible to go too far with minimalism. Google Wave had a user e
 ###Composability
 In addition to being minimalist, the building blocks of your software's UX should be composable. Having a set of composable primitives means that basic concepts can be combined in different permutations to express more complex interactions. This means that users can "discover" advanced techniques by building on their previous knowledge, rather than having to read how-to guides.
 
-![image](http://4.bp.blogspot.com/_XivcmTPSn1k/TNzZC62WzOI/AAAAAAAAA0c/Okq9AzJ0d8s/s400/22.jpg)
-
-<small>Hangul text is *composed* of basic elements</small>
-
-
-Asian writing systems are a great non-technical example of the advantage of composability. The Hangul script, used to write Korean, is phonetic. Once the reader knows the sound each letter represents, they can read all Korean words. In fact, Hangul can supposedly be learned very rapidly by beginners. 
-
-On the other hand, the Chinese script requires memorizing a new character for every word. Reading is often cited as a large sticking point for learners of Chinese languages.
-
-
 ![image](http://www.photoshopessentials.com/images/type/effects/gel/layer-style-db.jpg)
 
 <small>This window contains most of the magic of Photoshop</small>
