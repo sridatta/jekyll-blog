@@ -6,7 +6,9 @@ categories: []
 
 ---
 
-This morning, HN user sw007 reached out the community to explain why [he/she hates Hacker News](http://news.ycombinator.com/item?id=4396747). sw007 is not the first to notice the vile demeanor of the site but it was his/her post that got me thinking about how to improve the community I love.  I hope these suggestions might inspire the community leaders to consider how small changes to the site can inspire larger social changes in the HN community.
+This morning, HN user sw007 reached out the community to explain why [he/she hates Hacker News](http://news.ycombinator.com/item?id=4396747). sw007 is not the first to notice the vile demeanor of the site but it was his/her post that got me thinking about how to improve the community I love.  
+
+I hope these suggestions might inspire the community leaders to consider how small changes to the site can inspire larger social changes in the HN community. But I don't mean to second-guess PG, the mods or anyone who might know better than me.
 
 ##What doesn't matter
 I've read many threads lamenting the state of Hacker News. Inevitably a few suggestions come up that I don't think are all that effective.
