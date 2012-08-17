@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: "A Modest Proposal To Improve Hacker News"
+title: "A Proposal To Improve Hacker News"
 published: true
 categories: []
 
