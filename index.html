@@ -3,127 +3,67 @@ layout: default
 title: Home
 ---
 
-    <div class="row">
-      <div id="header" class="span10">
-        <h1>
-          Sridatta Thatipamala
-          <br />
-          <small> Developer and founder at Flotype</small>
-        </h1>
-        <p class="lead">I create things that allow people to work smarter, live better, and be happier</p>
-      </div> <!-- .header -->
-      <img class="span3 offset2" id="headshot" src="public/vector_sri.png" />
-    </div> <!-- .row -->
-  </div> <!-- .container -->
+<div class="row">
+  <div id="header" class="span10">
+    <h1> Sridatta Thatipamala </h1>
+    <p id="job-title">Developer and founder at Flotype</p>
+    <p id="tagline">I create things that allow people to work smarter, live better, and be happier</p>
+  </div> <!-- .header -->
 
-  <div class="container">
-    <div id="contact" class="section">
-      <div class="row">
+  <img class="span3 offset2" id="headshot" src="public/vector_sri.png" />
+</div> <!-- .row -->
 
-        <div class="span5">
-          <h1>Latest blog posts</h1>
-          <p class="">I write about personal development, startups, fitness and books. Here's what I wrote recently</p>
-          <ul>
-            {% for post in site.posts limit:5%}
-                <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-            {% endfor %}
-          </ul>
-        </div>
-
-        <div class="span5 offset1">
-          <h1>Connect with me</h1>
-          <p>I love hearing from people and I respond to almost every message within a day. Contact me with questions, interesting ideas or suggestions.</p>
-          <ul id="contact-list">
-            <li><a href="http://twitter.com/sridatta" >Twitter</a>
-            <li><a href="mailto:sthatipamala@gmail.com" id="link-email">Email</a></li>
-            <li><a href="http://www.linkedin.com/profile/view?id=10626513" >LinkedIn</a></li>
-          </ul>
-          
-        </div>
-
-        <div class="span5">
-        <!-- Begin MailChimp Signup Form -->
-          <link href="http://cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
-          <div id="mc_embed_signup">
-            <form class="form-stacked" action="http://sridattalabs.us4.list-manage1.com/subscribe/post?u=c2304a93adc36b32b92f71a67&amp;id=d7e99e51fc" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-              <label class="span3">Subscribe to my monthly newsletter for updates and cool tips on coding+startups</label>
-              <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-              <div class=""><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-            </form>
-          </div>
-          <!--End mc_embed_signup-->
-        </div>
-
-      </div> <!-- .row -->
-
-    </div> <!-- #contact -->
-
-    <div id="products" class="section">
-      <h1>Current Work <a href=""><small>See more &#8594</small></a></h1>
-
-      <div class="row">
-        <img class="span8" src="/public/bridge.png" />
-
-        <div class="span8">
-          <h2>Bridge <small>Flotype Inc.</small></h2>
-          <p><span class="label">Coming soon</span></p>
-          <p>
-            Bridge is a revolutionary way to develop web applications. Through Bridge, developers can compose a custom service-oriented topology made of any variety of languages without having to worry about the underlying networking and serialization. On this project I worked on an Erlang connection handler as well as the Java and C++ clients.
+<div id="showcase" class="row">
+  <div id="blog" class="span8">
+    <h1>Blog</h1>
+    <ul class="pretty-list">
+      {% for page in site.posts %}
+        <li>
+          <a href="{{ page.url }}">{{ page.title }}</a>
+          <p class="byline">
+            {{ page.date | date: '%B %d, %Y' }}
           </p>
-        </div> <!-- .span8 -->
-      </div> <!-- .row -->
+        </li>
+      {% endfor %}
+    </ul>
+  </div> <!-- #blog -->
 
-      <div class="row">
-        <img class="span8" src="/public/nowjs.png" />
+  <div id="products" class="span8">
+    <h1>Projects</h1>
+    <ul class="pretty-list">
+      <li>
+        <h2><a href="http://getbridge.com">Bridge</a> <small>Flotype Inc.</small></h2>
+        <p>
+          Bridge is a revolutionary way to develop web applications. Through Bridge, developers can compose a custom service-oriented topology made of any variety of languages without having to worry about the underlying networking and serialization. On this project I worked on an Erlang connection handler as well as the Java and C++ clients.
+        </p>
+      </li>
 
-        <div class="span8">
-          <h2><a href="http://nowjs.com">NowJS</a> <small>Flotype Inc.</small></h2>
-          <p>
-          NowJS makes it amazingly easy to build real-time web applications. It provides a shared namespace between the server and the client, allowing such magic as shared variables and remote procedure calls. NowJS quickly became one of the top libraries in the Node.js community due to its unprecendent simplicity, allowing you to write a chat server in 12 lines of code.
-          </p>
-        </div> <!-- .span8 -->
-      </div> <!-- .row -->
-  
-      <div class="row">
-        <img class="span8" src="/public/gitcoach.png" />
+      <li>
+        <h2><a href="http://nowjs.com">NowJS</a> <small>Flotype Inc.</small></h2>
+        <p>
+        NowJS makes it amazingly easy to build real-time web applications. It provides a shared namespace between the server and the client, allowing such magic as shared variables and remote procedure calls. NowJS quickly became one of the top libraries in the Node.js community due to its unprecendent simplicity, allowing you to write a chat server in 12 lines of code.
+        </p>
+      </li>
+    </ul>
 
-        <div class="span8">
-          <h2>GitCoach <small>Sridatta Thatipamala</small></h2>
-          <p><span class="label">Coming soon</span></p>
-          <p>
-          The GIT version control system has become the defacto choice of the developer community. While Git is powerful, most Git tutorials are either too simplistic or far too theoretical. GitCoach teaches Git through experience. Users learn advanced Git concepts and practice by applying them to realistic challenges. The site features a full in-browser, JS implementation of Git so users can practice without even having to install.
-          </p>
-        </div> <!-- .span8 -->
-      </div> <!-- .row -->
-
-    </div> <!-- #products -->
-
-    <div id="skills" class="section">
-      <h1>Skills I know</h1>
-      <div class="row">
-        <div class="span4">
-          <h2>Back-end Web</h2>
-          <p>Creating realtime applications that interface with popular Web APIs (Facebook, Twitter, etc). My favorite tech stack is Node.js with Redis and MongoDB. But I've worked with LAMP and some Django too.</p>
-        </div> <!-- span4 -->
-          
-        <div class="span4">
-          <h2>Scalable Systems</h2>
-          <p>Building high-performance software that can handle millions of requests per second. I have built systems in Erlang, Node.js and Clojure.In my spare time I've studied every canonical distributed systems canonical, from vector clocks to Paxos.</p>
-        </div> <!-- span4 -->
-
-        <div class="span4">
-          <h2>Mobile Development</h2>
-          <p>Experienced in writing for Android platform, including location-aware apps. I've also built a fairly popular Android game using a custom game engine and metrics system.</p>
-        </div> <!-- span4 -->
-
-        <div class="span4">
-          <h2>Product Design</h2>
-          <p>Strong experience in rapid prototyping and devising features and experiences for consumer-facing products. Recently I've also been practicing product marketing and finding product-market fit in early stage companies.</p>
-        </div> <!-- span4 -->
-
-      </div> <!-- .row -->
-
-    </div> <!-- #skills -->
-    
-
-
+    <h1>Skills</h1>
+    <ul class="pretty-list">
+      <li>
+        <h2>Back-end Web</h2>
+        <p>Creating realtime applications that interface with popular Web APIs (Facebook, Twitter, etc). My favorite tech stack is Node.js with Redis and MongoDB. But I've worked with LAMP and some Django too.</p>
+      </li>
+      <li>
+        <h2>Scalable Systems</h2>
+        <p>Building high-performance software that can handle millions of requests per second. I have built systems in Erlang, Node.js and Clojure.In my spare time I've studied every canonical distributed systems paper, from vector clocks to Paxos.</p>
+      </li>
+      <li>
+        <h2>Mobile Development</h2>
+        <p>Experienced in writing for Android platform, including location-aware apps. I've also built a fairly popular Android game using a custom game engine and metrics system.</p>
+      </li>
+      <li>
+        <h2>Product Design</h2>
+        <p>Strong experience in rapid prototyping and devising features and experiences for consumer-facing products. Recently I've also been practicing product marketing and finding product-market fit in early stage companies.</p>
+      </li>
+    </ul>
+  </div> <!-- #products -->
+</div> <!-- #showcase -->
