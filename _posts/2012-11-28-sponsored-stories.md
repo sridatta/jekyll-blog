@@ -35,7 +35,7 @@ It could equally have been Microsoft promoting his mention of "Halo 4". Facebook
 
 ![](/public/images/fb-topic-dedup.png)
 
-Unlike sponsoring "likes", there is no way to discern who is behind these smarter Facebook posts.
+Unlike sponsored "likes" and shares, there is no way to discern who is sponsoring these plain, old Facebook posts or why they were sponsored. The fact that companies can target a user's arbitrary content is a little creepy.
 
 Many people might be concerned that companies can "detect" what they are talking about and use their words as advertising. I personally do not mind. But the Help Center description of Sponsored Stories is outdated at best and evasive at worst. And I think people deserve to know who is benefiting from the content they post.
 
