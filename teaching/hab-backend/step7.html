@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Redirects</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+  <link rel="stylesheet" media="all" href="docco.css" />
+</head>
+<body>
+  <div id="container">
+    <div id="background"></div>
+      <div class="navbar">
+       <ul>
+         <li><a href="step6.html">Previous</a></li>
+         <li><a href="index.html">Home</a></li>
+         <li><a href="step8.html">Next</a></li>
+       </ul>
+    </div>   
+    <ul class="sections">
+        
+        
+        
+        <li id="section-1">
+            <div class="annotation">
+              
+              <div class="pilwrap for-h1">
+                <a class="pilcrow" href="#section-1">&#182;</a>
+              </div>
+              <h1>Redirects</h1>
+<p>Instead of rendering a page, a server can also tell the client to go
+to another page instead. This is called a redirect.</p>
+
+            </div>
+            
+            <div class="content"><div class="highlight"><pre><span class="keyword">from</span> flask <span class="keyword">import</span> *
+<span class="keyword">from</span> flask_simpledb <span class="keyword">import</span> SimpleDb
+
+app = Flask(__name__)
+db = SimpleDb()
+
+<span class="decorator">@app.route("/")</span>
+<span class="function"><span class="keyword">def</span> <span class="title">homepage</span><span class="params">()</span>:</span>
+    posts = [<span class="string">"CoffeeScript Causes Cancer"</span>, <span class="string">"Elon Musk Invents X-Ray Vision"</span>, <span class="string">"Lifting Weights Makes You A Better Programmer"</span>]
+    <span class="keyword">return</span> render_template(<span class="string">'home.html'</span>, posts=posts)
+
+<span class="decorator">@app.route('/create', methods=["GET", "POST"])</span>
+<span class="function"><span class="keyword">def</span> <span class="title">create</span><span class="params">()</span>:</span>
+    <span class="keyword">if</span> request.method == <span class="string">"GET"</span>:
+        <span class="keyword">return</span> render_template(<span class="string">'create.html'</span>)
+    <span class="keyword">else</span>:
+        title = request.form[<span class="string">"title"</span>]
+        content = request.form[<span class="string">"content"</span>]
+
+        db.addPost(title, content)</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-2">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-2">&#182;</a>
+              </div>
+              <p>To make a redirect in Flask, call the <code>redirect</code> function with
+the URL you want to redirect to. Then return the result.</p>
+
+            </div>
+            
+            <div class="content"><div class="highlight"><pre><span class="keyword">    return</span> redirect(<span class="string">'/'</span>)
+
+<span class="decorator">@app.route('/posts/&lt;post_id&gt;')</span>
+<span class="function"><span class="keyword">def</span> <span class="title">show_post</span><span class="params">(post_id)</span>:</span>
+    <span class="keyword">return</span> <span class="string">"You asked for post %d"</span> (post_id)</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-3">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-3">&#182;</a>
+              </div>
+              
+            </div>
+            
+            <div class="content"><div class="highlight"><pre><span class="keyword">if</span> __name__ == <span class="string">"__main__"</span>:
+    app.debug = <span class="built_in">True</span>
+    app.run()</pre></div></div>
+            
+        </li>
+        
+    </ul>
+  </div>
+</body>
+</html>
