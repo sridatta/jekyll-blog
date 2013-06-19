@@ -2,73 +2,40 @@
 layout: default
 title: Home
 ---
+<div class="container">
+  <div class="row masthead">
+    <div id="header" class="span10 offset3">
+      <h1> Sridatta Thatipamala </h1>
+      <p id="job-title">Software engineer. Pretty cool guy.</p>
+      <p id="tagline">I create things that allow people to work smarter, live better, and be happier</p>
+      <ul id="contact" class="inline pretty-list">
+        <li><a href="mailto:sthatipamala@gmail.com"><img src="/public/images/email.png" alt="Email" class="icon"/></a></li>
+        <li><a href="http://www.linkedin.com/pub/sridatta-thatipamala/3/685/729"><img src="/public/images/linkedin.png" alt="LinkedIn" class="icon"/></a></li>
+        <li><a href="http://twitter.com/sridatta"><img src="/public/images/twitter.png" alt="Twitter" class="icon"/></a></li>
+      </ul>
+    </div> <!-- .header -->
+  </div> <!-- .row -->
 
-<div class="row">
-  <div id="header" class="span10">
-    <h1> Sridatta Thatipamala </h1>
-    <p id="job-title">Developer and founder of Flotype</p>
-    <p id="tagline">I create things that allow people to work smarter, live better, and be happier</p>
-    <ul id="contact" class="inline pretty-list">
-      <li><a href="mailto:sthatipamala@gmail.com"><img src="/public/images/email.png" alt="Email" class="icon"/></a></li>
-      <li><a href="http://www.linkedin.com/pub/sridatta-thatipamala/3/685/729"><img src="/public/images/linkedin.png" alt="LinkedIn" class="icon"/></a></li>
-      <li><a href="http://twitter.com/sridatta"><img src="/public/images/twitter.png" alt="Twitter" class="icon"/></a></li>
-    </ul>
-  </div> <!-- .header -->
+  <div id="showcase" class="row">
+    <div id="blog" class="span10 offset3">
+      <ul class="pretty-list">
+        {% for page in site.posts %}
+          <li>
+            <h2 class="title"><a href="{{ page.url }}">{{ page.title }}</a></h2> 
+            <p class="byline">
+              {{ page.date | date: '%B %d, %Y' }}
+            </p>
+            <div class="postbody">
+                {{ if page.tagline }}
+                  {{ page.tagline }}
+                {{ else }}
+                  {{page.content | strip_html | truncatewords:35}}
+                {{ endif }}
+              </div>
+          </li>
+        {% endfor %}
+      </ul>
+    </div> <!-- #blog -->
 
-  <img class="span3 offset2" id="headshot" src="public/vector_sri.png" />
-</div> <!-- .row -->
-
-<div id="showcase" class="row">
-  <div id="blog" class="span8">
-    <h1>Blog</h1>
-    <ul class="pretty-list">
-      {% for page in site.posts %}
-        <li>
-          <a href="{{ page.url }}">{{ page.title }}</a>
-          <p class="byline">
-            {{ page.date | date: '%B %d, %Y' }}
-          </p>
-        </li>
-      {% endfor %}
-    </ul>
-  </div> <!-- #blog -->
-
-  <div id="products" class="span8">
-    <h1>Projects</h1>
-    <ul class="pretty-list">
-      <li>
-        <h2><a href="http://getbridge.com">Bridge</a> <small>Flotype Inc.</small></h2>
-        <p>
-          Bridge is a revolutionary way to develop web applications. Through Bridge, developers can compose a custom service-oriented topology made of any variety of languages without having to worry about the underlying networking and serialization. On this project I worked on an Erlang connection handler as well as the Java and C++ clients.
-        </p>
-      </li>
-
-      <li>
-        <h2><a href="http://nowjs.com">NowJS</a> <small>Flotype Inc.</small></h2>
-        <p>
-        NowJS makes it amazingly easy to build real-time web applications. It provides a shared namespace between the server and the client, allowing such magic as shared variables and remote procedure calls. NowJS quickly became one of the top libraries in the Node.js community due to its unprecendent simplicity, allowing you to write a chat server in 12 lines of code.
-        </p>
-      </li>
-    </ul>
-
-    <h1>Skills</h1>
-    <ul class="pretty-list">
-      <li>
-        <h2>Back-end Web</h2>
-        <p>Creating realtime applications that interface with popular Web APIs (Facebook, Twitter, etc). My favorite tech stack is Node.js with Redis and MongoDB. But I've worked with LAMP and some Django too.</p>
-      </li>
-      <li>
-        <h2>Scalable Systems</h2>
-        <p>Building high-performance software that can handle millions of requests per second. I have built systems in Erlang, Node.js and Clojure.In my spare time I've studied every canonical distributed systems paper, from vector clocks to Paxos.</p>
-      </li>
-      <li>
-        <h2>Mobile Development</h2>
-        <p>Experienced in writing for Android platform, including location-aware apps. I've also built a fairly popular Android game using a custom game engine and metrics system.</p>
-      </li>
-      <li>
-        <h2>Product Design</h2>
-        <p>Strong experience in rapid prototyping and devising features and experiences for consumer-facing products. Recently I've also been practicing product marketing and finding product-market fit in early stage companies.</p>
-      </li>
-    </ul>
-  </div> <!-- #products -->
-</div> <!-- #showcase -->
+  </div> <!-- #showcase -->
+</div>

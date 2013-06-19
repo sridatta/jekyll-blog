@@ -1,15 +1,23 @@
 body {
-  border-top: 4px solid orange;
-  background-color: ivory;
   padding-top: 10px;
   font-size:17px;
   line-height:1.5em;
   margin:0;
   padding:0;
+  color: #333333;
+  font-family: adelle, Georgia, serif;
 }
 
 a {
   color: #a82300;
+}
+
+.header h1 {
+  font-size: 2.813em;
+  text-align: center;
+}
+
+.masthead {
 }
 
 h1,h2,h3,h4 {
@@ -145,3 +153,19 @@ img.icon:hover {
 .syntaxhighlighter code {
   background-color: inherit;
 }
+
+footer {
+  width: 100%;
+  background-color: #ecf0f1;
+  border-bottom: 4px solid rgb(233,237,238);
+}
+
+footer h2 {
+  font-size: 1.2em;
+  color: #333;
+}
+
+footer p {
+  font-size: 0.8em;
+}
+
