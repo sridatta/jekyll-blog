@@ -16,7 +16,7 @@ My dream is to have an automated vegetable garden which provides me all the prod
 Spark is a data processing framework that is meant to compete with Hadoop. There are [benchmarks that claim it is faster than Hadoop](https://amplab.cs.berkeley.edu/benchmark/), but what I really love is the [API doesn't make my eyes bleed](http://spark.incubator.apache.org/docs/latest/scala-programming-guide.html
 ).
 
-Spark is loosely related to Mesos, a distributed job scheduler. Mesos takes a compute cluster and a list of jobs and schedules them efficiently. It can schedule [long-running](https://github.com/mesosphere/marathon/) and [periodic](https://github.com/airbnb/chronos) jobs. Natch.
+Spark is loosely related to Mesos, a distributed job scheduler. Mesos takes a compute cluster and a list of jobs and schedules them efficiently. It can schedule [long-running](https://github.com/mesosphere/marathon/) and [periodic](https://github.com/airbnb/chronos) jobs. Nice.
 
 ## 3. [Open Source Bio Equipment](http://www.instructables.com/contest/buildmylab)
 
