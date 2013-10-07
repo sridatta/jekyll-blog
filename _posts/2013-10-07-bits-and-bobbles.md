@@ -9,8 +9,9 @@ categories: []
 "Bits and bobbles" is a weekly, curated list of cool things I've seen people making on the Internet.
 
 ## 1. [Nootropics](http://www.gwern.net/Nootropics)
-Could mind-altering drugs improve your personality and intelligence?
-This guy takes a highly scientific approach and finds out.
+People already take caffeine to stay alert. Why stop there?
+This guy find out whether off the shelf, mind-altering drugs 
+can improve your personality and intelligence.
 
 ## 2. [Puzzlescript](http://www.puzzlescript.net/documentation/rules101.html)
 Puzzlescript lets you create full-featured 2D games in a 100%
