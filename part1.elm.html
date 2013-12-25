@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            test
+        </title>
+        <script type="text/javascript" src="/elm-runtime.js">
+            
+        </script>
+        <script type="text/javascript">
+            Elm.Main = Elm.Main || {};
+Elm.Main.make = function (elm) {
+   elm.Main = elm.Main || {};
+   if (elm.Main.values)
+   return elm.Main.values;
+   var N = Elm.Native,
+   _N = N.Utils.make(elm),
+   _L = N.List.make(elm),
+   _E = N.Error.make(elm),
+   _J = N.JavaScript.make(elm),
+   $moduleName = "Main";
+   var Text = Elm.Text.make(elm);
+   var Text = Elm.Text.make(elm);
+   var Basics = Elm.Basics.make(elm);
+   var Signal = Elm.Signal.make(elm);
+   var List = Elm.List.make(elm);
+   var Maybe = Elm.Maybe.make(elm);
+   var Time = Elm.Time.make(elm);
+   var Prelude = Elm.Prelude.make(elm);
+   var Graphics = Graphics || {};
+   Graphics.Element = Elm.Graphics.Element.make(elm);
+   var Color = Elm.Color.make(elm);
+   var Graphics = Graphics || {};
+   Graphics.Collage = Elm.Graphics.Collage.make(elm);
+   var Keyboard = Elm.Keyboard.make(elm);
+   var Window = Elm.Window.make(elm);
+   var _op = {};
+   var update = F2(function (input,
+   state) {
+      return function () {
+         var _case0 = state.finished;
+         switch (_case0)
+         {case false:
+            return _N.replace([["finished"
+                               ,true]],
+              state);
+            case true: return state;}
+         _E.Case($moduleName,
+         "between lines 20 and 24");
+      }();
+   });
+   var renderState = function (arg0) {
+      return function () {
+         return function () {
+            var _case2 = arg0.finished;
+            switch (_case2)
+            {case false:
+               return Text.plainText("Press enter to end game");
+               case true:
+               return Text.plainText("GOODBYE");}
+            _E.Case($moduleName,
+            "between lines 36 and 40");
+         }();
+      }();
+   };
+   var display = F2(function (arg1,
+   el) {
+      return function () {
+         switch (arg1.ctor)
+         {case "_Tuple2":
+            return A4(Graphics.Element.container,
+              arg1._0,
+              arg1._1,
+              Graphics.Element.middle,
+              el);}
+         _E.Case($moduleName,
+         "on line 46, column 21 to 44");
+      }();
+   });
+   var defaultGame = {_: {}
+                     ,finished: false};
+   var gameState = A3(Signal.foldp,
+   update,
+   defaultGame,
+   Keyboard.enter);
+   var main = A2(Signal.lift2,
+   display,
+   Window.dimensions)(A2(Signal.lift,
+   renderState,
+   gameState));
+   var GameState = function (a) {
+      return {_: {},finished: a};
+   };
+   elm.Main.values = {_op: _op
+                     ,defaultGame: defaultGame
+                     ,update: update
+                     ,gameState: gameState
+                     ,renderState: renderState
+                     ,display: display
+                     ,main: main
+                     ,GameState: GameState};
+   return elm.Main.values;
+};
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            Elm.fullscreen(Elm.Main)
+        </script>
+        <noscript>
+            
+        </noscript>
+    </body>
+</html>
